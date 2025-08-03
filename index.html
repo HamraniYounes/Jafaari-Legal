@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jafaari Walid - Expertise Juridique</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <nav>
+        <div class="container">
+            <div class="nav-container">
+                <a href="#" class="logo">Jafaari Legal & Tax</a>
+                <ul class="nav-menu">
+                    <li><a href="#" class="nav-link active" onclick="showSection('home')" data-translate="nav-home">Accueil</a></li>
+                    <li><a href="#" class="nav-link" onclick="showSection('about')" data-translate="nav-about">À propos</a></li>
+                    <li><a href="#" class="nav-link" onclick="showSection('services')" data-translate="nav-services">Services</a></li>
+                    <li><a href="#" class="nav-link" onclick="showSection('news')" data-translate="nav-news">Actualités</a></li>
+                    <li><a href="#" class="nav-link" onclick="showSection('contact')" data-translate="nav-contact">Contact</a></li>
+                </ul>
+
+                <select id="languageSelector" onchange="changeLanguage(this.value)">
+                    <option value="fr" selected>🇫🇷</option>
+                    <option value="en">🇬🇧</option>
+                    <option value="nl">🇳🇱</option>
+                </select>
+                
+            </div>
+        </div>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home" class="section active">
+        <div class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <h1 data-translate="hero-title">Excellence Juridique</h1>
+                    <p data-translate="hero-text">Nous offrons des services juridiques de haute qualité avec une approche personnalisée et un engagement sans faille envers nos clients.</p>
+                    <a href="#" class="cta-button" onclick="showSection('contact')" data-translate="cta-button">Nous Contacter</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="container">
+            <h2 class="section-title" data-translate="about-title">À Propos</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p data-translate="about-text1">Notre cabinet d'avocats offre un environnement de type boutique qui met l'accent sur les caractéristiques uniques de chaque client et de chaque dossier.</p>
+                    <br>
+                    <p data-translate="about-text2">Avec des années d'expérience dans différents domaines du droit, notre équipe combine expertise technique et approche humaine pour offrir un service juridique d'exception.</p>
+                </div>
+                <div class="about-image">
+                    <img src="/media/photo_2.jpg" alt="Walid en costume">
+                </div>
+            </div>
+            
+            <div class="values">
+                <div class="value-card">
+                    <h3 data-translate="expertise-title">Expertise</h3>
+                    <p data-translate="expertise-text">Notre équipe est constituée de professionnels du droit ayant un profil académique de premier ordre, combinant souvent leur travail avec des missions universitaires.</p>
+                </div>
+                <div class="value-card">
+                    <h3 data-translate="dedication-title">Dévouement</h3>
+                    <p data-translate="dedication-text">Nous apprécions la motivation et le dévouement lorsqu'il s'agit de comprendre et de défendre nos clients et leurs intérêts. Nous visons l'excellence.</p>
+                </div>
+                <div class="value-card">
+                    <h3 data-translate="personalization-title">Personnalisation</h3>
+                    <p data-translate="personalization-text">Nous ne voulons pas être le plus grand cabinet, mais nous essayons toujours d'être le meilleur pour nos clients, dans un environnement personnalisé.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="section">
+        <div class="container">
+            <h2 class="section-title" data-translate="services-title">Nos Services</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <h3 data-translate="business-law">Droit des Affaires</h3>
+                    <p data-translate="business-law-text">Conseil et accompagnement juridique pour les entreprises, contrats commerciaux, fusions-acquisitions, et structuration d'entreprises.</p>
+                </div>
+                <div class="service-card">
+                    <h3 data-translate="labor-law">Droit du Travail</h3>
+                    <p data-translate="labor-law-text">Assistance en matière de relations de travail, négociation collective, licenciements et contentieux prud'hommal.</p>
+                </div>
+                <div class="service-card">
+                    <h3 data-translate="real-estate-law">Droit Immobilier</h3>
+                    <p data-translate="real-estate-law-text">Transactions immobilières, baux commerciaux, copropriété, et résolution de litiges immobiliers.</p>
+                </div>
+                <div class="service-card">
+                    <h3 data-translate="family-law">Droit de la Famille</h3>
+                    <p data-translate="family-law-text">Divorce, garde d'enfants, adoption, successions et tous les aspects du droit familial.</p>
+                </div>
+                <div class="service-card">
+                    <h3 data-translate="criminal-law">Droit Pénal</h3>
+                    <p data-translate="criminal-law-text">Défense pénale, assistance lors des gardes à vue, et représentation devant les tribunaux correctionnels.</p>
+                </div>
+                <div class="service-card">
+                    <h3 data-translate="civil-law">Droit Civil</h3>
+                    <p data-translate="civil-law-text">Responsabilité civile, dommages et intérêts, et tous types de contentieux civils.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- News Section -->
+    <section id="news" class="section">
+        <div class="container">
+            <h2 class="section-title" data-translate="news-title">Actualités</h2>
+            <div class="news-container">
+                <div class="articles-section">
+                    <h3 data-translate="our-articles">Nos Articles</h3>
+                    <div class="article-card">
+                        <div class="article-date" data-translate="article-date1">15 juin 2024</div>
+                        <h4 class="article-title" data-translate="article-title1">Nouvelles réglementations en droit du travail</h4>
+                        <p class="article-excerpt" data-translate="article-excerpt1">Les récentes modifications du Code du travail impactent significativement les relations employeur-employé. Découvrez les principales évolutions et leurs implications pratiques...</p>
+                        <a href="#" class="read-more" data-translate="read-more">Lire la suite →</a>
+                    </div>
+                    <div class="article-card">
+                        <div class="article-date" data-translate="article-date2">8 juin 2024</div>
+                        <h4 class="article-title" data-translate="article-title2">Protection des données personnelles : ce qui change</h4>
+                        <p class="article-excerpt" data-translate="article-excerpt2">Le RGPD continue d'évoluer avec de nouvelles directives. Nous faisons le point sur les obligations des entreprises et les sanctions encourues...</p>
+                        <a href="#" class="read-more" data-translate="read-more">Lire la suite →</a>
+                    </div>
+                    <div class="article-card">
+                        <div class="article-date" data-translate="article-date3">2 juin 2024</div>
+                        <h4 class="article-title" data-translate="article-title3">Réforme du droit des successions</h4>
+                        <p class="article-excerpt" data-translate="article-excerpt3">La récente réforme apporte des changements importants dans la transmission du patrimoine. Analyse des nouvelles dispositions et conseils pratiques...</p>
+                        <a href="#" class="read-more" data-translate="read-more">Lire la suite →</a>
+                    </div>
+                </div>
+                
+                <div class="videos-section">
+                    <h3 data-translate="our-videos">Nos Vidéos YouTube</h3>
+                    <div class="video-item">
+                        <div class="video-title" data-translate="video-title1">Comment rédiger un contrat de travail ?</div>
+                        <a href="#" class="video-link" data-translate="watch-youtube">Voir sur YouTube →</a>
+                    </div>
+                    <div class="video-item">
+                        <div class="video-title" data-translate="video-title2">Les bases du droit immobilier</div>
+                        <a href="#" class="video-link" data-translate="watch-youtube">Voir sur YouTube →</a>
+                    </div>
+                    <div class="video-item">
+                        <div class="video-title" data-translate="video-title3">Divorce : vos droits et obligations</div>
+                        <a href="#" class="video-link" data-translate="watch-youtube">Voir sur YouTube →</a>
+                    </div>
+                    <div class="video-item">
+                        <div class="video-title" data-translate="video-title4">Créer son entreprise : aspects juridiques</div>
+                        <a href="#" class="video-link" data-translate="watch-youtube">Voir sur YouTube →</a>
+                    </div>
+                    <div class="video-item">
+                        <div class="video-title" data-translate="video-title5">Protection des consommateurs</div>
+                        <a href="#" class="video-link" data-translate="watch-youtube">Voir sur YouTube →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <div class="container">
+            <h2 class="section-title" data-translate="contact-title">Contact</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3 data-translate="my-coordinates">Mes Coordonnées</h3>
+                    <div class="contact-item">
+                        <strong>📍</strong>
+                        <div>
+                            <strong data-translate="address-label">Adresse :</strong><br>
+                            123 Avenue de la Justice<br>
+                            1000 Bruxelles, Belgique
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <strong>📞</strong>
+                        <div>
+                            <strong data-translate="phone-label">Téléphone :</strong><br>
+                            +32 1 23 45 67 89
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <strong>📧</strong>
+                        <div>
+                            <strong data-translate="email-label">Email :</strong><br>
+                            contact@cabinet-juridique.be
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <strong>🕒</strong>
+                        <div>
+                            <strong data-translate="hours-label">Horaires :</strong><br>
+                            <span data-translate="weekdays">Lun-Ven : 9h00 - 18h00</span><br>
+                            <span data-translate="saturday">Sam : 9h00 - 12h00</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-form">
+                    <h3 data-translate="contact-me">Me Contacter</h3>
+                    <form>
+                        <div class="form-group">
+                            <label for="name" data-translate="full-name">Nom complet</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email" data-translate="email-input">Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone" data-translate="phone-input">Téléphone</label>
+                            <input type="tel" id="phone" name="phone">
+                        </div>
+                        <div class="form-group">
+                            <label for="subject" data-translate="subject">Objet</label>
+                            <input type="text" id="subject" name="subject" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message" data-translate="message">Message</label>
+                            <textarea id="message" name="message" required></textarea>
+                        </div>
+                        <button type="submit" class="submit-button" data-translate="send-message">Envoyer le message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p id="rightsReserved" data-translate="footer">&copy; 2025 Jafaari Legal & Tax. Tous droits réservés.</p>
+        </div>
+    </footer>
+</body>
+</html>
