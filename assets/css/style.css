@@ -1,0 +1,115 @@
+.navbar-dark {
+    background-color: #da6600 !important;
+}
+
+.btn-primary, .btn-orange {
+    background-color: #da6600;
+    border: none;
+}
+
+.btn-primary:hover, .btn-orange:hover {
+    background-color: #e07a3a;
+}
+
+.card {
+    border: none;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.section-title {
+    color: #da6600;
+    margin-bottom: 1.5rem;
+    font-weight: 600;
+}
+
+.admin-panel {
+    background-color: #da6600;
+    border-left: 4px solid #ff8c42;
+    padding: 1rem;
+    margin: 1rem 0;
+}
+
+/* Couleur principale orange */
+.text-orange {
+    color: #da6600;
+}
+
+/* Style des liens du menu */
+.navbar-nav .nav-link {
+    color: #333;
+    font-weight: 500;
+    position: relative;
+    padding-bottom: 0.5rem !important;
+    transition: color 0.3s ease;
+}
+
+/* Ligne orange au survol */
+.navbar-nav .nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #da6600;
+    transition: width 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover::after {
+    width: 100%;
+}
+
+/* Lien "Accueil" toujours souligné (page active) */
+.navbar-nav .active-link {
+    color: #da6600 !important;
+}
+
+.navbar-nav .active-link::after {
+    width: 100%;
+    background-color: #da6600;
+}
+
+/* Couleur des liens au survol */
+.navbar-nav .nav-link:hover,
+.navbar-nav .active-link {
+    color: #da6600;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .navbar-nav .nav-link::after {
+        display: none; /* Désactiver l'effet sur mobile si trop petit */
+    }
+}
+
+/* Effet de soulignement animé sur les liens du footer */
+.footer-link {
+    position: relative;
+    color: #ffffff !important;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-link::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #da6600;
+    transition: width 0.3s ease;
+}
+
+.footer-link:hover::after {
+    width: 100%;
+}
+
+.footer-link:hover {
+    color: #da6600 !important;
+}
